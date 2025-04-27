@@ -1,14 +1,32 @@
-
 :root {
-  --sky: #0099FF;
-  --halo: #00D964;
-  --sun: #FFCD00;
-  --glow: #FF9900;
-  --purple: #7F2DA6;
-  --black: #000000;
+  /* Brand colours pulled from the logo */
+  --sky:    #0099FF;  /* Caribbean Blue */
+  --halo:   #00D964;  /* Lime Green */
+  --sun:    #FFCD00;  /* Solar Yellow */
+  --glow:   #FF9900;  /* Sunburst Orange */
+  --purple: #7F2DA6;  /* Rescue Purple */
+  --black:  #000000;
+
   --font-head: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 }
+
+/* ---------- New accents ---------- */
+h2, h3 { color: var(--purple); }
+
+blockquote {
+  border-left: 6px solid var(--halo);
+  padding: .5rem 1rem;
+  font-style: italic;
+  background: #f8fff8;
+}
+
+.paw-bullet::before {
+  content: "🐾";
+  margin-right: .35rem;
+  color: var(--glow);
+}
+
 
 * { box-sizing: border-box; }
 
