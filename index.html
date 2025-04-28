@@ -22,7 +22,7 @@
       width: 100%;
       height: var(--banner-height);
       overflow: hidden;          /* hides any overflow if the image is tall */
-      z-index: 1000;
+      z-index: 250;
     }
     
     .banner img {
@@ -31,22 +31,20 @@
       object-fit: contain;       /* scale down while preserving aspect ratio */
       display: block;
     }
-    /* Push the rest of the page down by roughly the banner’s height
-       (adjust if your banner is taller/shorter). */
-    
+     
     body {
       margin-top: var(--banner-height);  /* keeps page content below the banner */
     }
   </style>
-  <!-- ──────────────────────────────────────────────────────── -->
+ 
 </head>
 
 <body>
-  <!-- ─── Always-visible banner ────────────────────────────── -->
+
   <div class="banner">
     <img src="wits-banner.png" alt="Walking In The Sun Rescue Banner">
   </div>
-  <!-- ──────────────────────────────────────────────────────── -->
+
 
   <header>
     <h1>Walking In The Sun Rescue</h1>
@@ -73,16 +71,16 @@
       <div class="card">
         <!-- This image can be replaced with a different one if
              you no longer want the banner duplicated here. -->
-        <img src="wits-banner.png" alt="Adoptable pet">
+        <img src="adopt.jpg" alt="Adoptable pet">
         <div class="card-body">
           <h3>Adopt</h3>
-          <p>Browse our dogs &amp; cats ready for a forever family.</p>
+          <p>Browse our dogs ready for a forever family.</p>
           <a class="btn" href="adopt.html">See Pets</a>
         </div>
       </div>
 
       <div class="card">
-        <img src="images/Walking in the Sun Logo.jpg" alt="Foster care">
+        <img src="foster.jpg" alt="Foster care">
         <div class="card-body">
           <h3>Foster</h3>
           <p>Open your home short-term and save a life.</p>
@@ -91,7 +89,7 @@
       </div>
 
       <div class="card">
-        <img src="images/placeholder.jpg" alt="Volunteer">
+        <img src="volunteer.jpg" alt="Volunteer">
         <div class="card-body">
           <h3>Volunteer</h3>
           <p>Join transport runs, events, or remote admin help.</p>
