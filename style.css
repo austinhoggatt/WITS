@@ -11,6 +11,43 @@
   --font-body: 'Open Sans', sans-serif;
 }
 
+/* ─── Header & logo ─────────────────────────────────────────── */
+.site-header {
+  display: flex;
+  align-items: center;       /* vertically center logo and nav */
+  gap: 2rem;                 /* space between logo and nav */
+  padding: 0.5rem 1rem;
+  background: #009cff;       /* same blue you used behind the menu */
+}
+
+.logo {
+  max-height: 110px;         /* keep logo a reasonable size */
+  height: auto;
+  width: auto;
+}
+
+/* ─── Navigation bar ───────────────────────────────────────── */
+.site-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;           /* nav wraps on very narrow screens */
+  gap: 1.5rem;
+}
+
+.site-header nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Optional: shrink menu text a bit on phone screens */
+@media (max-width: 600px) {
+  .site-header nav a { font-size: 0.9rem; }
+}
+
+
 /* ---------- New accents ---------- */
 h2, h3 { color: var(--purple); }
 
