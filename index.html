@@ -10,23 +10,32 @@
 
   <!-- ─── Sticky-banner styles ─────────────────────────────── -->
   <style>
-    /* Banner sticks to the very top */
+
+    :root {
+    --banner-height: 120px;
+    }
+    
     .banner {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      z-index: 1000;               /* keeps it above all other elements */
+      height: var(--banner-height);
+      overflow: hidden;          /* hides any overflow if the image is tall */
+      z-index: 1000;
     }
+    
     .banner img {
       width: 100%;
-      height: auto;
-      display: block;              /* removes bottom-gap on images */
+      height: 100%;
+      object-fit: contain;       /* scale down while preserving aspect ratio */
+      display: block;
     }
     /* Push the rest of the page down by roughly the banner’s height
        (adjust if your banner is taller/shorter). */
+    
     body {
-      margin-top: 160px;
+      margin-top: var(--banner-height);  /* keeps page content below the banner */
     }
   </style>
   <!-- ──────────────────────────────────────────────────────── -->
