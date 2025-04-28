@@ -74,11 +74,11 @@ section {
   padding: 4rem 2rem;
 }
 
-.hero {
-  background: linear-gradient(135deg, var(--sun), var(--glow));
-  color: #fff;
-  text-align: center;
+.hero{
+  background:url("../images/hero-banner-v2.png") center/cover no-repeat;
+  min-height: 420px;
 }
+
 
 .btn {
   display: inline-block;
