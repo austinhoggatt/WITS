@@ -1,197 +1,65 @@
+/* ==========================================================
+   Walking In The Sun Rescue  ─  master stylesheet
+   ----------------------------------------------------------
+   1.  CSS Custom-properties (brand palette & fonts)
+   2.  Reset / base element defaults
+   3.  Global type & helpers
+   4.  Layout: header + navigation
+   5.  Hero banner
+   6.  Buttons & links
+   7.  Card grid & utilities
+   8.  Forms
+   9.  Footer
+   10. Media queries
+   ========================================================== */
+
+/* ───────────────────────────────────────────────────────────
+   1.  Theme variables
+   ─────────────────────────────────────────────────────────── */
 :root {
   /* Brand colours pulled from the logo */
-  --sky:    #0099FF;  /* Caribbean Blue */
-  --halo:   #00D964;  /* Lime Green */
-  --sun:    #FFCD00;  /* Solar Yellow */
-  --glow:   #FF9900;  /* Sunburst Orange */
-  --purple: #7F2DA6;  /* Rescue Purple */
+  --sky:    #0099ff;   /* Caribbean Blue   */
+  --halo:   #00d964;   /* Lime Green       */
+  --sun:    #ffcd00;   /* Solar Yellow     */
+  --glow:   #ff9900;   /* Sunburst Orange  */
+  --purple: #7f2da6;   /* Rescue Purple    */
   --black:  #000000;
 
+  /* Webfonts  (loaded via <link> in <head>) */
   --font-head: 'Montserrat', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-body: 'Open Sans',  sans-serif;
 }
 
-/* style.css */
-header {
-  display: flex;          /* turns header into a flex container   */
-  flex-direction: column; /* keeps logo above the nav (vertical)  */
-  align-items: center;    /* centers everything on the cross-axis */
-  justify-content: flex-start; /* logo sits flush to the top      */
-}
+/* ───────────────────────────────────────────────────────────
+   2.  Reset & base element defaults
+   ─────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
-header img {
-  width: 200px;   /* optional: set a tidy max logo width */
-}
-
-html, body {     
+html, body {
   margin: 0;
   padding: 0;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;   /* already removed bullets in your markup, but just in case */
+body {
+  font-family: var(--font-body);
+  color: var(--black);
+  background: #fdfdfd;
+  line-height: 1.55;
 }
 
+img { display: block; max-width: 100%; height: auto; }
 
-/* ─── Header & logo ─────────────────────────────────────────── */
-.site-header {
-  display: flex;
-  align-items: center;       /* vertically center logo and nav */
-  gap: 2rem;                 /* space between logo and nav */
-  padding: 0.5rem 1rem;
-  background: #009cff;       /* same blue you used behind the menu */
-}
+/* ───────────────────────────────────────────────────────────
+   3.  Global type & helper classes
+   ─────────────────────────────────────────────────────────── */
+h1, h2, h3,
+h4, h5, h6 { font-family: var(--font-head); margin: 0 0 .5em; }
 
-#site-badge{
-  display:block;       /* becomes its own line */
-  margin:0 auto;       /* pushes left & right margins out equally */
-  max-width:180px;     /* optional size tweak */
-}
-
-.logo {
-  max-height: 110px;         /* keep logo a reasonable size */
-  height: auto;
-  width: auto;
-}
-
-/* ─── Navigation bar ───────────────────────────────────────── */
-.site-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;           /* nav wraps on very narrow screens */
-  gap: 1.5rem;
-}
-
-.site-header nav a {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-/* Optional: shrink menu text a bit on phone screens */
-@media (max-width: 600px) {
-  .site-header nav a { font-size: 0.9rem; }
-}
-
-
-/* ---------- New accents ---------- */
-h2, h3 { color: var(--purple); }
+h2, h3         { color: var(--purple); }
+section        { padding: 4rem 2rem;  }
 
 blockquote {
   border-left: 6px solid var(--halo);
   padding: .5rem 1rem;
-  font-style: italic;
-  background: #f8fff8;
-}
-
-.paw-bullet::before {
-  content: "🐾";
-  margin-right: .35rem;
-  color: var(--glow);
-}
-
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: var(--font-body);
-  color: var(--black);
-  background: #fdfdfd;
-}
-
-header h1 {
-  font-family: var(--font-head);
-  color: #fff;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-nav li {
-  margin-left: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-section {
-  padding: 4rem 2rem;
-}
-
-.hero{
-  background:url("../images/hero-banner-v2.png") center/cover no-repeat;
-  min-height: 420px;
-}
-
-
-.btn {
-  display: inline-block;
-  background: var(--purple);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.cards {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.card img {
-  width: 100%;
-  display: block;
-}
-
-.card-body {
-  padding: 1rem;
-}
-
-footer {
-  background: var(--sky);
-  color: #fff;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-label {
-  font-weight: 600;
-}
