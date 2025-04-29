@@ -13,37 +13,49 @@
 <body>
 
   <header>
-      <div id="nav-placeholder"></div>
-      <script>
-          fetch('nav.html')
-              .then(response => response.text())
-              .then(data => { document.getElementById('nav-placeholder').innerHTML = data; });
-      </script>
+      <div class="site-header">
+        <h1>
+            <img src="wits_badge_transparent.png" id="site-badge" alt="Walking in the Sun Rescue badge">
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li><a href="foster.html">Foster</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
   </header>
 
-  <!-- ======= What We Do ======= -->
-<section id="what-we-do" class="what-we-do">
-  <h2>What We Do</h2>
-
-  <p>
-    Walking In The Sun Rescue, a 501(c) (3) charitable organization, 
-    is a foster based rescue. Our focus is to rescue the homeless, 
-    treat the ill and injured, and to relieve the suffering of companion 
-    animals in Morehouse Parish, Louisiana.
-  </p>
-
-  <ul>
-    <li><strong>Rescue &amp; Transport:</strong> Shelter pulls and transportation to safety.</li>
-    <li><strong>Medical Care:</strong> Vaccinations, spay/neuter, and specialized treatment.</li>
-    <li><strong>Foster Network:</strong> Short-term home placement with a supply food and vet care.</li>
-    <li><strong>Community Outreach:</strong> Over-population and humane-care education.</li>
-  </ul>
-
-</section>
+  <section id="what-we-do" class="what-we-do">
+    <h2>What We Do</h2>
+  
+      <p>
+        Walking In The Sun Rescue, a 501(c) (3) charitable organization, 
+        is a foster based rescue. Our focus is to rescue the homeless, 
+        treat the ill and injured, and to relieve the suffering of companion 
+        animals in Morehouse Parish, Louisiana.
+      </p>
+  
+      <ul>
+        <li><strong>Rescue &amp; Transport:</strong> Shelter pulls and transportation to safety.</li>
+        <li><strong>Medical Care:</strong> Vaccinations, spay/neuter, and specialized treatment.</li>
+        <li><strong>Foster Network:</strong> Short-term home placement with a supply food and vet care.</li>
+        <li><strong>Community Outreach:</strong> Over-population and humane-care education.</li>
+      </ul>
+  
+  </section>
 
 
   <section>
     <div class="cards">
+      
       <div class="card">
         <img src="adopt.jpg" alt="Adoptable pet">
         <div class="card-body">
@@ -74,7 +86,10 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Walking In The Sun Rescue. EIN 46-5678735. All rights reserved.</p>
+    <p>&copy; 2025 Walking In The Sun Rescue.</p>
+    <p></p>EIN 46-5678735.</p>
+    <p></p>All rights reserved.</p>
   </footer>
+  
 </body>
 </html>
