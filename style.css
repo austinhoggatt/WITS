@@ -155,6 +155,13 @@ nav a {
   background: #fff;
 }
 
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
 .card-body { padding: 1rem; }
 
 /* ───────────────────────────────────────────────────────────
