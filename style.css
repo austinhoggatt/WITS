@@ -20,6 +20,12 @@
   background: #009cff;       /* same blue you used behind the menu */
 }
 
+#site-badge{
+  display:block;       /* becomes its own line */
+  margin:0 auto;       /* pushes left & right margins out equally */
+  max-width:180px;     /* optional size tweak */
+}
+
 .logo {
   max-height: 110px;         /* keep logo a reasonable size */
   height: auto;
