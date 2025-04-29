@@ -11,6 +11,17 @@
   --font-body: 'Open Sans', sans-serif;
 }
 
+/* style.css */
+header {
+  display: flex;          /* turns header into a flex container   */
+  flex-direction: column; /* keeps logo above the nav (vertical)  */
+  align-items: center;    /* centers everything on the cross-axis */
+  justify-content: flex-start; /* logo sits flush to the top      */
+}
+
+header img {
+  width: 200px;   /* optional: set a tidy max logo width */
+}
 
 html, body {     
   margin: 0;
@@ -91,15 +102,6 @@ body {
   font-family: var(--font-body);
   color: var(--black);
   background: #fdfdfd;
-}
-
-header {
-  background: var(--sky);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 header h1 {
