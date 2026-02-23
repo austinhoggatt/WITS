@@ -168,22 +168,15 @@ nav a {
    8.  Forms
    ─────────────────────────────────────────────────────────── */
 form {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
 
-input,
-textarea,
-select {
-  width: 100%;
-  padding: .5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-label { font-weight: 600; }
+fieldset { border: 1px solid rgba(0,0,0,.15); padding: 1rem; margin: 1rem 0; }
+input, select, textarea { width: 100%; padding: .6rem; font: inherit; }
+label { display: block; margin: .75rem 0 .25rem; font-weight: 600; }
 
 /* ───────────────────────────────────────────────────────────
    9.  Footer
