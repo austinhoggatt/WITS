@@ -1,191 +1,213 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Walking In The Sun Rescue</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
- 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <header>
-      <div class="site-header">
-        <h1>
-            <img src="images/wits_badge_transparent.png" id="site-badge" alt="Walking in the Sun Rescue badge">
-        </h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-<!--            
-            <li><a href="adopt.html">Adopt</a></li>  
-            <li><a href="foster.html">Foster</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="contact.html">Contact</a></li>
--->
-          </ul>
-        </nav>
-      </div>
+    <div class="site-header">
+      <h1>
+        <img
+          src="images/wits_badge_transparent.png"
+          id="site-badge"
+          alt="Walking in the Sun Rescue badge"
+        />
+      </h1>
 
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- WHAT WE DO -->
   <section id="what-we-do" class="what-we-do">
     <h2>What We Do</h2>
-  
-      <p>
-        Walking In The Sun Rescue, a 501(c) (3) charitable organization, 
-        is a foster based rescue. Our focus is to rescue the homeless, 
-        treat the ill and injured, and to relieve the suffering of companion 
-        animals in Morehouse Parish, Louisiana.
-      </p>
-  
-      <ul>
-        <li><strong>Rescue &amp; Transport:</strong> Shelter pulls and transportation to safety.</li>
-        <li><strong>Medical Care:</strong> Vaccinations, spay/neuter, and specialized treatment.</li>
-        <li><strong>Foster Network:</strong> Short-term home placement with a supply food and vet care.</li>
-        <li><strong>Community Outreach:</strong> Over-population and humane-care education.</li>
-      </ul>
 
-      <p>Follow us on <a href="https://facebook.com/walkinginthesunrescue" target="_blank">Facebook</a> & <a href="https://instagram.com/walkinginthesunrescue" target="_blank">Instagram</a></p>
-  
+    <p>
+      Walking In The Sun Rescue, a 501(c)(3) charitable organization, is a foster-based rescue.
+      Our focus is to rescue the homeless, treat the ill and injured, and relieve the suffering
+      of companion animals in Morehouse Parish, Louisiana.
+    </p>
+
+    <ul>
+      <li><strong>Rescue &amp; Transport:</strong> Shelter pulls and transportation to safety.</li>
+      <li><strong>Medical Care:</strong> Vaccinations, spay/neuter, and specialized treatment.</li>
+      <li><strong>Foster Network:</strong> Short-term home placement with food and vet care support.</li>
+      <li><strong>Community Outreach:</strong> Overpopulation and humane-care education.</li>
+    </ul>
+
+    <p>
+      Follow us on
+      <a href="https://facebook.com/walkinginthesunrescue" target="_blank" rel="noopener">Facebook</a>
+      &amp;
+      <a href="https://instagram.com/walkinginthesunrescue" target="_blank" rel="noopener">Instagram</a>.
+    </p>
   </section>
 
-  <section>
-  <h2>About Walking In The Sun Rescue</h2>
+  <!-- QUICK ACTIONS (NO DEAD PAGES) -->
+  <section id="help" aria-label="Ways to help">
+    <div class="cards">
 
-  <p>Walking In The Sun Rescue is a <strong>501(c)(3)</strong> organisation—
-     rescuing dogs for years but becoming “official” in 2014.</p>
+      <a class="card" href="#contact">
+        <img src="images/adopt.png" alt="Adopt" />
+        <div class="card-body">
+          <h3 class="paw-bullet">Adopt</h3>
+          <p>Email us to ask about dogs ready for a forever family.</p>
+        </div>
+      </a>
 
-  <p class="paw-bullet">  Our mission is to promote spay and neuter, find loving
-     indoor homes for the homeless, treat the ill and injured, comfort those who
-     are suffering, and educate the community.</p>
+      <a class="card" href="#contact">
+        <img src="images/foster.png" alt="Foster" />
+        <div class="card-body">
+          <h3 class="paw-bullet">Foster</h3>
+          <p>Open your home short-term and save a life.</p>
+        </div>
+      </a>
 
-  <p class="paw-bullet">  We operate <strong>without a brick-and-mortar shelter</strong>;
-     every life is saved through a network of foster homes. We take in animals
-     when space and finances allow, especially those that would not be accepted
-     by the local shelter—or to keep them from entering it in the first place.</p>
+      <a class="card" href="#contact">
+        <img src="images/volunteer.png" alt="Volunteer" />
+        <div class="card-body">
+          <h3 class="paw-bullet">Volunteer</h3>
+          <p>Join transport runs, events, or remote admin help.</p>
+        </div>
+      </a>
 
-  <p class="paw-bullet">  All pets are fully vetted in foster care, then placed in
-     permanent homes or transported to partner rescues across the United States.</p>
+    </div>
+  </section>
 
-  <p class="paw-bullet">  Because of generous donors and fund-raisers, our dogs
-     leave a world of darkness and learn to <em>walk in the sun</em> every day.</p>
+  <!-- IMPACT -->
+  <section id="impact">
+    <h2>Our Impact</h2>
 
-        <blockquote>
-              "Saving one dog will not change the world, but surely for that one
-              dog, the world will change forever."
-        </blockquote>
-    
-</section>
-
-
-  <section>
-    <h2>Our 2024 Impact</h2>
+    <h3>2024</h3>
     <ul>
       <li><strong>369</strong> animals rescued</li>
       <li><strong>594</strong> animals transported</li>
-      <li><strong>50</strong> animals spayed & neutered</li>
+      <li><strong>50</strong> animals spayed &amp; neutered</li>
     </ul>
 
-    <h2>Our 2025 Impact</h2>
+    <h3>2025</h3>
     <ul>
       <li><strong>244</strong> animals rescued</li>
       <li><strong>400+</strong> animals transported</li>
-      <li><strong>50</strong> animals spayed & neutered</li>
+      <li><strong>50</strong> animals spayed &amp; neutered</li>
     </ul>
   </section>
 
-  <section>
+  <!-- DONATE -->
+  <section id="donate">
+    <h2>Donate</h2>
+    <p>Your gift keeps tails wagging and bellies full. Thank you!</p>
+    <a class="btn" href="https://www.paypal.com/paypalme/WalkingInTheSun" target="_blank" rel="noopener">
+      Donate via PayPal
+    </a>
+  </section>
+
+  <!-- ABOUT (CONDENSED FOR HOME PAGE) -->
+  <section id="about">
+    <h2>About Walking In The Sun Rescue</h2>
+
+    <p>
+      Walking In The Sun Rescue is a <strong>501(c)(3)</strong> organization—rescuing dogs for years,
+      and becoming “official” in 2014.
+    </p>
+
+    <p class="paw-bullet">
+      Our mission is to promote spay and neuter, find loving indoor homes for the homeless,
+      treat the ill and injured, comfort those who are suffering, and educate the community.
+    </p>
+
+    <p class="paw-bullet">
+      We operate <strong>without a brick-and-mortar shelter</strong>; every life is saved through a
+      network of foster homes. We take in animals when space and finances allow—especially those
+      that would not be accepted by the local shelter, or to keep them from entering it in the first place.
+    </p>
+
+    <p class="paw-bullet">
+      All pets are fully vetted in foster care, then placed in permanent homes or transported
+      to partner rescues across the United States.
+    </p>
+
+    <p class="paw-bullet">
+      Because of generous donors and fund-raisers, our dogs leave a world of darkness and learn to
+      <em>walk in the sun</em> every day.
+    </p>
+
+    <blockquote>
+      “Saving one dog will not change the world, but surely for that one dog, the world will change forever.”
+    </blockquote>
+  </section>
+
+  <!-- GOALS / CONTEXT -->
+  <section id="goals">
     <h2>Our 2026 Goals</h2>
     <ul>
-      <li><b>Maintain Rescue & Transport Efforts</b></li>
-      <li><b>Increase Support for Low-Cost Spay &amp; Neuter in the community</b></li>
-      <li><b>Increase Volunteer & Foster Network</b></li>
+      <li><strong>Maintain Rescue &amp; Transport Efforts</strong></li>
+      <li><strong>Increase support for low-cost spay &amp; neuter in the community</strong></li>
+      <li><strong>Increase our volunteer &amp; foster network</strong></li>
     </ul>
 
     <h3>Why Our Parish Needs Us</h3>
     <p>
-      Morehouse Parish’s has only one brick-and-mortar veterinary clinic operating in the parish,
-      which creates a critical gap in veterinary services. Our focus is on helping to make routine 
+      Morehouse Parish has only one brick-and-mortar veterinary clinic operating in the parish,
+      which creates a critical gap in veterinary services. Our focus is on helping make routine
       veterinary care accessible to more animals and the families that care for them.
     </p>
 
-    <h3>Community Partners</h3>
+    <p class="tagline">
+      Together, we’re widening the circle of compassion—one pet, one person, one parish at a time.
+    </p>
+  </section>
+
+  <!-- PARTNERS / BOARD -->
+  <section id="partners">
+    <h2>Community Partners</h2>
     <p>
-      We rely on the generosity of North-east LA veterinarians Dr. Chris Morris
-      (Rayville), Dr. Tyler Thomas (West Monroe) and Dr. Jennifer Ratliff (Ruston),
-      plus outreach hosts such as PetSmart (Monroe) and Tractor Supply
-      (West Monroe &amp; Bastrop).
+      We rely on the generosity of North-east LA veterinarians Dr. Chris Morris (Rayville),
+      Dr. Tyler Thomas (West Monroe) and Dr. Jennifer Ratliff (Ruston), plus outreach hosts such as
+      PetSmart (Monroe) and Tractor Supply (West Monroe &amp; Bastrop).
     </p>
 
-    <h3>Board of Directors</h3>
+    <h2>Board of Directors</h2>
     <ul class="board-list">
       <li>Mindy Diffinderfer — President</li>
       <li>Ariel King — Vice President</li>
       <li>Austin Hoggatt — Secretary</li>
       <li>Susan McWilliams — Treasurer</li>
     </ul>
-    </section>
-
-    <p class="tagline">
-      Together, we’re widening the circle of compassion—one pet, one person, one
-      parish at a time.
-    </p>
-
-
-  <section>
-    <div class="cards">
-      
-      <div class="card">
-        <img src="images/adopt.png" alt="Adoptable pet">
-        <div class="card-body">
-          <h3> <p class="paw-bullet"> Adopt</h3>
-          <p>Ask about dogs ready for a forever family.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="images/foster.png" alt="Foster care">
-        <div class="card-body">
-          <h3> <p class="paw-bullet"> Foster</h3>
-          <p>Open your home short-term and save a life.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="images/volunteer.png" alt="Volunteer">
-        <div class="card-body">
-          <h3> <p class="paw-bullet"> Volunteer</h3>
-          <p>Join transport runs, events, or remote admin help.</p>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <section>
-    <h2>Donate</h2>
-    <p>Your gift keeps tails wagging and bellies full. Thank you!</p>
-    <a class="btn" href="https://www.paypal.com/paypalme/WalkingInTheSun" target="_blank">Donate via PayPal</a>
-  </section>
-
-  <section>
+  <!-- CONTACT -->
+  <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:walkinginthesunrescue@yahoo.com">walkinginthesunrescue@yahoo.com</a></p>
-    <p>Mailing Address: PO Box 123, Bastrop, LA 71221</p>
-    <p>Follow us on <a href="https://facebook.com/walkinginthesunrescue" target="_blank">Facebook</a> & <a href="https://instagram.com/walkinginthesunrescue" target="_blank">Instagram</a></p>
+    <p>Mailing Address: PO Box 123, Bastrop, LA 71221</p>
+    <p>
+      Follow us on
+      <a href="https://facebook.com/walkinginthesunrescue" target="_blank" rel="noopener">Facebook</a>
+      &amp;
+      <a href="https://instagram.com/walkinginthesunrescue" target="_blank" rel="noopener">Instagram</a>
+    </p>
   </section>
 
   <footer>
     <p>&copy; 2026 Walking In The Sun Rescue.</p>
-    <p></p>EIN 46-5678735.</p>
-    <p></p>All rights reserved.</p>
+    <p>EIN 46-5678735.</p>
+    <p>All rights reserved.</p>
   </footer>
-  
+
 </body>
 </html>
